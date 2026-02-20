@@ -36,32 +36,17 @@ Example:
 
 Produces:
 
-`<repo-root>/logproc.jar`
+`./logproc.jar`
 
 ## Run
 
-### Recommended (works from any current directory)
-
 ```bash
-./scripts/run.sh \
+java -jar logproc.jar \
   --input logs/ \
   --producers 2 \
   --consumers 4 \
   --queue-size 1000 \
   --output summary.json
-```
-
-### Direct java command
-
-If you use `java -jar`, run it from repo root or use an absolute jar path:
-
-```bash
-java -jar /absolute/path/to/repo/logproc.jar \
-  --input /absolute/path/to/logs \
-  --producers 2 \
-  --consumers 4 \
-  --queue-size 1000 \
-  --output /absolute/path/to/summary.json
 ```
 
 ## Output
